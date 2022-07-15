@@ -1,0 +1,14 @@
+package:
+  name: npop
+  version: 0.1.0
+
+source:
+  path: ../npop
+
+requirements:
+  host:
+    - python
+
+  run:
+    - numpy
+    - python>=3.6

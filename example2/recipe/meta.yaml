@@ -1,0 +1,21 @@
+package:
+  name: lltm
+  version: 0.1.0
+
+source:
+  path: ../lltm
+
+build:
+  number: '0'
+  string: py3.7_torch1.12_cuda11.3_cudnn8.3.2_0
+
+requirements:
+  host:
+    - python
+    - pytorch 1.12.0 py3.7_cuda11.3_cudnn8.3.2_0
+    - setuptools
+
+  run:
+    - cudatoolkit >=11.3,<12
+    - python >=3.7,<3.8.0a0
+    - pytorch >=1.12,<1.13
